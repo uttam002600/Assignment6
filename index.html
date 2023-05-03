@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="a">
+    <h1 >Guess The Number Game</h1>
+    <button id="button" onclick="func()">Start Game</button>
+    </div>
+    <script>
+        function func() {
+            inp = prompt("enter the number");
+            document.write("your number is ", inp, "<br>");
+            if (inp >= 1 && inp <= 100) {
+                var flag = 1;
+                for (var i = 1; i <= 5; i++) {
+                    var guess = Math.floor(Math.random() * 100) + 1;
+                    var str = ("computer guess: " + guess + "\n");
+                    document.write(str, "<br>");
+                    if (inp == guess) {
+                        flag = 0;
+                        document.write("computer wins");
+                        break;
+                    }
+                }
+                if (flag) {
+                    document.write("you win");
+                }
+
+            }
+            else {
+                prompt("enter number between 1 and 100");
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>

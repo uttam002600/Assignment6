@@ -1,0 +1,17 @@
+body{
+    background: #aaf0f8;
+}
+.a{
+    text-align: center;
+    color: rgb(84, 18, 31);
+}
+#button{
+    color: rgb(26, 13, 159);
+    height: 51px;
+    width: 103px;
+    border: 3px solid rgb(99, 248, 108);
+    font-size: 16px;
+    border-radius: 9px;
+    background: #e2f896;
+
+}
